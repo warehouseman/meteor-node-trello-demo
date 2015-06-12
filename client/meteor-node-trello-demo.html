@@ -1,0 +1,46 @@
+<head>
+  <title>Demo app for the "warehouseman:meteor-node-trello" package</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+
+  <button class="countUp">Click Me</button>
+  <p>{{valTrello}}, you've pressed my button {{counter}} times.</p>
+
+  <div id="loggedout">
+      <button class="connect">Connect To Trello</button>
+  </div>
+
+  <div id="loggedin">
+      <div id="header">
+          Logged in to Trello as <span id="fullName"></span> 
+          <button class="disconnect">Disconnect from Trello</button>
+      </div>
+      
+      <div id="output"></div>
+  </div>
+<hr />
+<p>export MONGO_URL="mongodb://xxxxxxxxxxxxx:xxxxxxx@ds041432.mongolab.com:41432/meteor-node-trello"</p>
+<p>export TRELLO_KEY="dc7bb1d94xxxxxxxxxxxxx2d0a71245c7"</p>
+<p>export TRELLO_USER_A="alphawarehouseman"</p>
+<p>export TRELLO_TOKEN_A="7415ce7e1c6da3f57ec8d4aecb0eaf5b19a3ecdfc20c2a10483af84cf449e015"</p>
+<p>export TRELLO_USER_B="bravowarehouseman"</p>
+<p>export TRELLO_TOKEN_B="2b64529be4a2a67d4ee04376db5d9b563845febb3f5a668826a3be52defaca84"</p>
+<p>export TRELLO_USER_C="charliewarehouseman"</p>
+<p>export TRELLO_TOKEN_C="3c183da0e7719301b76d51c4f0c72179a7d585507b504459c68b07e675adc99a"</p>
+
+<p>Alpha Warehouseman 
+    alpha.warehouseman@yahoo.com alpha123 (613) 362-7028 (613) 933-6260</p>
+<p>Bravo Warehouseman 
+    bravo.warehouseman@yahoo.ca bravo123 (613) 362-7028 (613) 933-6260</p>
+<p>Charlie Warehouseman 
+    charlie.warehouseman@yahoo.ca charlie123 (613) 362-7028 (613) 933-6260</p>
+
+
+</template>
